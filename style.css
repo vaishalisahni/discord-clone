@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+*:hover{
+    cursor: default;
+}
 
 .main {
   display: flex;
@@ -40,6 +43,9 @@
     height: 48px;
     border-radius: 15px;
 }
+.discord-icon img:hover{
+    cursor: pointer;
+}
 .user-icons {
     display: flex;
     flex-direction: column;
@@ -57,6 +63,7 @@
 .user img:hover{
     background-color: #5865F2;
     border-radius: 18px;
+    cursor: pointer;
 }
 .channel-list {
     display: flex;
@@ -88,6 +95,9 @@
     font-weight: 500;
     font-family: sans-serif;
 
+}
+.conversation-start input:hover{
+    cursor: pointer;
 }
 .friends-container{
     overflow:auto;
@@ -140,9 +150,17 @@
 .nitro:hover , .shop:hover{
     background-color: #DBDEE1;
     color: #ffffff;
+    cursor: pointer;
+}
+.nitro:hover img , .shop:hover img, .nitro img:hover , .shop img:hover{
+    filter: brightness(0) invert(1);
+}
+.channel span:hover,.channel img:hover{
+    cursor: pointer;
 }
 .Friends-Nitro-Shop div:hover {
     background-color: #3A3D42;
+    cursor:pointer
 }
 .shop .sh{
     flex-grow: 1;
@@ -186,6 +204,9 @@
 .direct-messages{
     font-size: 12px;
 }
+.direct-messages:hover{
+    cursor: pointer;
+}
 .user-details{
     display: flex;
     width: 240px;
@@ -196,6 +217,7 @@
     width: 100%;
     color: #A6ABB1;
     padding: 16px 8px;
+    gap: 8px;
 }
 .user-details .icon{
     height: 32px;
@@ -212,21 +234,41 @@
 .user-details .details{
     display: flex;
     gap: 8px;
+    padding: 4px;
+    border-radius: 4px;
+    /* flex-grow: 1; */
+    max-width: 122px;
+   
 }
 .user-details .name{
     color: #DBDEE1;
     font-size: 14px;
+    max-width: 76px;
     font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    display: block;
 }
 .user-details .status{
     display: flex;
     font-size: 12px;
 }
+.details:hover, .visibility:hover{
+    background: #3A3D42;
+}
 .visibility-icons{
     display: flex;
-    gap: 15px;
-
-
+    gap: 4px;
+}
+.visibility{
+    display: flex;
+    padding: 5px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    /* aspect-ratio: 1; */
 }
 .visibility-icons img{
     height: 20px;
@@ -276,19 +318,26 @@
 .nav-items{
     display: flex;
     flex-direction: row;
-    gap: 28px;
+    gap: 24px;
 }
 .nav-items .active{
     color: #2EC771;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 8px;
 }
 .nav-item{
     color: #B5BAA7;
+    padding: 4px 8px;
+    border-radius: 4px;
     /* width: 61px;
     height: 24px; */
 }
-/* .nav-item:hover{
+.nav-item:hover{
     background-color: #393C41;
-} */
+    cursor: pointer;
+}
 .left-nav{
     display: flex;
     flex-direction: row;
@@ -299,6 +348,10 @@
 .right-nav{
     display: flex;
     gap:20px
+}
+.right-nav img:hover{
+    cursor: pointer;
+    filter: brightness(0) invert(1);
 }
 .chats-active {
     display: flex;
@@ -348,6 +401,9 @@
     /* padding: 8px; */
     position: relative;
     margin-top: 5px;
+}
+.addfrnd form input:hover{
+    cursor:auto;
 }
 .addfrnd form input{
     border: none;
